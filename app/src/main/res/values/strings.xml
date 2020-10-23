@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ScoreKeeper_YoussefNafaa</string>
+    <string name="teams">Teams</string>
+    <string name="scores">Scores</string>
+    <string name="scoreAmount">Score Amount</string>
+    <string name="team1">Team1</string>
+    <string name="team2">Team 2</string>
+    <string name="score1" translatable="false"> 0 </string>
+    <string name="score2" translatable="false"> 0 </string>
+    <string name="btnPlus" translatable="false">  + </string>
+    <string name="btnMinus" translatable="false"> - </string>
+    <string name="rdButton1" translatable="false">1</string>
+    <string name="rdButton2" translatable="false">2</string>
+    <string name="rdButton3" translatable="false">3</string>
+    <string name="rdButton4" translatable="false">6</string>
+
+</resources>
