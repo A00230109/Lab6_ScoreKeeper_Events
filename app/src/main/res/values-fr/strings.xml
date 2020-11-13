@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ScoreKeeper_YoussefNafaa</string>
+    <string name="app_name">Score Keeper</string>
     <string name="teams">Équipes</string>
     <string name="scores">Buts</string>
     <string name="scoreAmount">Montant Du Score</string>

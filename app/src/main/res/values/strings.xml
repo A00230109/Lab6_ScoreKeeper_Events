@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ScoreKeeper_YoussefNafaa</string>
+    <string name="app_name">Score Keeper</string>
     <string name="teams">Teams</string>
     <string name="scores">Scores</string>
     <string name="scoreAmount">Score Amount</string>

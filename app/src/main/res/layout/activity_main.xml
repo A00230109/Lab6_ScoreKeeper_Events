@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,11 +22,8 @@
 
         <TextView
             android:id="@+id/teams"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/teams"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             app:layout_constraintBottom_toTopOf="@id/guidelineH03"
             app:layout_constraintEnd_toStartOf="@id/guidelineV02"
             app:layout_constraintStart_toStartOf="@id/guidelineV01"
@@ -33,11 +31,8 @@
 
         <TextView
             android:id="@+id/scores"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/scores"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             app:layout_constraintBottom_toTopOf="@id/guidelineH03"
             app:layout_constraintEnd_toStartOf="@id/guidelineV04"
             app:layout_constraintStart_toStartOf="@id/guidelineV03"
@@ -45,11 +40,8 @@
 
         <TextView
             android:id="@+id/scoreAmount"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
             android:text="@string/scoreAmount"
+            style="@style/StyleForTextViews"
             app:layout_constraintBottom_toTopOf="@id/guidelineH04"
             app:layout_constraintEnd_toStartOf="@id/guidelineV06"
             app:layout_constraintStart_toStartOf="@id/guidelineV05"
@@ -87,10 +79,7 @@
 
         <TextView
             android:id="@+id/team1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:text="@string/team1"
             app:layout_constraintBottom_toTopOf="@id/guidelineH04"
             app:layout_constraintEnd_toStartOf="@id/guidelineV02"
@@ -100,10 +89,7 @@
 
         <TextView
             android:id="@+id/score1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:text="@string/score1"
             app:layout_constraintBottom_toTopOf="@id/guidelineH04"
             app:layout_constraintEnd_toStartOf="@id/guidelineV04"
@@ -127,10 +113,7 @@
 
         <TextView
             android:id="@+id/team2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:text="@string/team2"
             app:layout_constraintBottom_toTopOf="@id/guidelineH06"
             app:layout_constraintEnd_toStartOf="@id/guidelineV02"
@@ -140,10 +123,7 @@
 
         <TextView
             android:id="@+id/score2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:text="@string/score2"
             app:layout_constraintBottom_toTopOf="@id/guidelineH06"
             app:layout_constraintEnd_toStartOf="@id/guidelineV04"
@@ -187,12 +167,10 @@
 
         <Button
             android:id="@+id/btnPlus"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/custom_button"
+            android:textSize="45sp"
+            style="@style/StyleForButtons"
+            android:background="@drawable/custom_buttonplus"
             android:text="@string/btnPlus"
             app:layout_constraintBottom_toTopOf="@id/guidelineH022"
             app:layout_constraintEnd_toStartOf="@id/guidelineV05"
@@ -201,10 +179,10 @@
 
         <Button
             android:id="@+id/btnMinus"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
+            android:textSize="45sp"
             android:textStyle="bold"
+            style="@style/StyleForButtons"
+            android:background="@drawable/custom_buttonminus"
             android:text="@string/btnMinus"
             app:layout_constraintBottom_toTopOf="@id/guidelineH022"
             app:layout_constraintEnd_toStartOf="@id/guidelineV07"
@@ -216,7 +194,6 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/lighton"
-            android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/guidelineH04"
             app:layout_constraintEnd_toStartOf="@id/guidelineV05"
@@ -228,7 +205,6 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/lightoff"
-            android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/guidelineH06"
             app:layout_constraintEnd_toStartOf="@id/guidelineV05"
@@ -289,6 +265,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="top"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@id/guidelineH08"
             app:layout_constraintEnd_toStartOf="@id/guidelineV07"
             app:layout_constraintStart_toStartOf="@id/guidelineV06"

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/custom_background"
     tools:context=".MainActivity">
 
         <androidx.constraintlayout.widget.Guideline
@@ -16,14 +17,11 @@
 
         <TextView
             android:id="@+id/teams"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/teams"
+            style="@style/StyleForTextViews"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
             android:autoSizeMaxTextSize="20sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@id/guidelineH03"
             app:layout_constraintEnd_toStartOf="@id/guidelineV02"
             app:layout_constraintStart_toStartOf="@id/guidelineV01"
@@ -31,14 +29,11 @@
 
         <TextView
             android:id="@+id/scores"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/scores"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMaxTextSize="30sp"
             app:layout_constraintBottom_toTopOf="@id/guidelineH03"
             app:layout_constraintEnd_toStartOf="@id/guidelineV04"
             app:layout_constraintStart_toStartOf="@id/guidelineV03"
@@ -46,11 +41,8 @@
 
         <TextView
             android:id="@+id/scoreAmount"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/scoreAmount"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
             android:autoSizeMaxTextSize="18sp"
@@ -91,10 +83,7 @@
 
         <TextView
             android:id="@+id/team1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:text="@string/team1"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
@@ -106,11 +95,8 @@
 
         <TextView
             android:id="@+id/score1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/score1"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
             android:autoSizeMaxTextSize="36sp"
@@ -135,10 +121,7 @@
 
         <TextView
             android:id="@+id/team2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:text="@string/team2"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
@@ -150,11 +133,8 @@
 
         <TextView
             android:id="@+id/score2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:text="@string/score2"
-            android:textStyle="bold"
+            style="@style/StyleForTextViews"
             android:autoSizeTextType="uniform"
             android:autoSizeMinTextSize="16sp"
             android:autoSizeMaxTextSize="36sp"
@@ -200,14 +180,13 @@
 
         <Button
             android:id="@+id/btnPlus"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
             android:textStyle="bold"
+            style="@style/StyleForButtons"
+            android:background="@drawable/custom_buttonplus"
             android:text="@string/btnPlus"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="16sp"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="36sp"
+            android:autoSizeMaxTextSize="45sp"
             app:layout_constraintBottom_toTopOf="@id/guidelineH022"
             app:layout_constraintEnd_toStartOf="@id/guidelineV05"
             app:layout_constraintStart_toStartOf="@id/guidelineV04"
@@ -215,14 +194,13 @@
 
         <Button
             android:id="@+id/btnMinus"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:gravity="center"
+            style="@style/StyleForButtons"
+            android:background="@drawable/custom_buttonminus"
             android:text="@string/btnMinus"
             android:textStyle="bold"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="16sp"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="36sp"
+            android:autoSizeMaxTextSize="45sp"
             app:layout_constraintBottom_toTopOf="@id/guidelineH022"
             app:layout_constraintEnd_toStartOf="@id/guidelineV07"
             app:layout_constraintStart_toStartOf="@id/guidelineV06"
@@ -233,11 +211,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/lighton"
-            android:gravity="center"
             android:textStyle="bold"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="16sp"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="36sp"
+            android:autoSizeMaxTextSize="45sp"
             app:layout_constraintBottom_toTopOf="@id/guidelineH04"
             app:layout_constraintEnd_toStartOf="@id/guidelineV05"
             app:layout_constraintStart_toStartOf="@id/guidelineV04"
@@ -248,11 +225,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@drawable/lightoff"
-            android:gravity="center"
             android:textStyle="bold"
             android:autoSizeTextType="uniform"
-            android:autoSizeMinTextSize="16sp"
-            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeMinTextSize="36sp"
+            android:autoSizeMaxTextSize="45sp"
             app:layout_constraintBottom_toTopOf="@id/guidelineH06"
             app:layout_constraintEnd_toStartOf="@id/guidelineV05"
             app:layout_constraintStart_toStartOf="@id/guidelineV04"
@@ -312,6 +288,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:gravity="top"
+            android:textColor="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@id/guidelineH08"
             app:layout_constraintEnd_toStartOf="@id/guidelineV07"
             app:layout_constraintStart_toStartOf="@id/guidelineV06"
@@ -324,6 +301,7 @@
                 android:layout_gravity="center"
                 android:checked="true"
                 android:gravity="center"
+                android:textColor="#FFFFFF"
                 android:text="@string/rdButton1"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -334,6 +312,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="#FFFFFF"
                 android:text="@string/rdButton2"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -343,6 +322,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="#FFFFFF"
                 android:text="@string/rdButton3"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -352,6 +332,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:textColor="#FFFFFF"
                 android:text="@string/rdButton4"
                 android:textSize="18sp"
                 android:textStyle="bold" />
