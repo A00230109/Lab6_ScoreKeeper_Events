@@ -8,6 +8,10 @@
     android:background="@drawable/custom_background"
     tools:context=".MainActivity">
 
+        <include
+            layout="@layout/toolbar"/>
+
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineH01"
             android:layout_width="wrap_content"
@@ -39,6 +43,33 @@
             app:layout_constraintStart_toStartOf="@id/guidelineV03"
             app:layout_constraintTop_toTopOf="@id/guidelineH022" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineH011"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <TextView
+            android:text="Hi"
+            style="@style/StyleForTextViews"
+            app:layout_constraintBottom_toTopOf="@id/guidelineH02"
+            app:layout_constraintEnd_toStartOf="@id/guidelineV02"
+            app:layout_constraintStart_toStartOf="@id/guidelineV01"
+            app:layout_constraintTop_toTopOf="@id/guidelineH011" />
+
+        <TextView
+            android:id="@+id/greetings"
+            android:text="User"
+            style="@style/StyleForTextViews"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeMaxTextSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/guidelineH021"
+            app:layout_constraintEnd_toStartOf="@id/guidelineV02"
+            app:layout_constraintStart_toStartOf="@id/guidelineV01"
+            app:layout_constraintTop_toTopOf="@id/guidelineH02" />
+
         <TextView
             android:id="@+id/scoreAmount"
             android:text="@string/scoreAmount"
@@ -63,7 +94,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.20" />
+            app:layout_constraintGuide_percent="0.24" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineH022"
@@ -338,4 +369,5 @@
                 android:textStyle="bold" />
         </RadioGroup>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
